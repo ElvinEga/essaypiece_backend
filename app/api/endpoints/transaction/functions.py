@@ -1,22 +1,30 @@
+import uuid
+
+from fastapi.params import Depends
 from sqlalchemy.orm import Session
+
+from app.core.database import get_db
 from app.models.transaction import Transaction, TransactionStatus
 from app.schemas.transaction import TransactionCreate
 from fastapi import HTTPException, status
 
 
 # Create a new transaction
-def create_transaction(user_id: int, transaction: TransactionCreate, db: Session):
-    db_transaction = Transaction(
-        user_id=user_id,
+def create_transaction(transaction: TransactionCreate, db: Session = Depends(get_db)):
+    new_transaction = Transaction(
+        transaction_number=str(uuid.uuid4()),  # Generate a unique transaction number
+        user_id=transaction.user_id,
         amount=transaction.amount,
-        transaction_type=transaction.transaction_type,
-        description=transaction.description,
-        status=TransactionStatus.pending,  # Default to pending on creation
+        type=transaction.type,
+        sign=transaction.sign,
+        payment_method=transaction.payment_method,
+        status=transaction.status,
+        description=transaction.description
     )
-    db.add(db_transaction)
+    db.add(new_transaction)
     db.commit()
-    db.refresh(db_transaction)
-    return db_transaction
+    db.refresh(new_transaction)
+    return new_transaction
 
 
 # Get transactions for a specific user
