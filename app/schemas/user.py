@@ -18,6 +18,10 @@ class UserLogin(UserBase):
     password: str
 
 
+class RefreshTokenRequest(BaseModel):
+    refresh_token: str
+
+
 class User(UserBase):
     id: int
     first_name: Optional[str]
