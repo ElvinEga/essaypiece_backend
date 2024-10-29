@@ -4,7 +4,7 @@ from sqlalchemy import Column, Integer, String, Float, DateTime, Boolean, Foreig
 from sqlalchemy.orm import relationship
 from datetime import datetime
 from app.core.database import Base
-from app.schemas.order import Service, Language
+from app.schemas.order import Service, Language, Academic, CitationStyle
 
 
 class OrderStatus(enum.Enum):
@@ -21,7 +21,7 @@ class Order(Base):
     deadline = Column(DateTime, nullable=False)
     for_final_date = Column(DateTime, nullable=True)
     language = Column(Enum(Language))
-    level = Column(Integer, nullable=False)
+    level = Column(Enum(Academic), nullable=False)
     service = Column(Enum(Service))
     quantity = Column(Integer, nullable=False)
     space = Column(Integer, nullable=False)
@@ -32,10 +32,13 @@ class Order(Base):
     price = Column(Float, nullable=True)
     subject = Column(String, nullable=False)
     number_of_sources = Column(Integer, nullable=False)
-    style = Column(Integer, nullable=False)
+    style = Column(Enum(CitationStyle), nullable=False)
     is_private = Column(Boolean, default=False)
     promocode = Column(String, nullable=True)
     client_id = Column(String, ForeignKey("clients.id"), nullable=False)
     client = relationship("Client", back_populates="orders")
     status = Column(Enum(OrderStatus), default=OrderStatus.draft, nullable=False)
     created_at = Column(DateTime, default=datetime.utcnow)
+
+
+metadata = Base.metadata

@@ -9,8 +9,10 @@ from sqladmin import Admin, ModelView
 
 # import 
 from app.core.database import engine
-from app.models.admin import UserAdmin
+from app.models.admin import UserAdmin, OrderAdmin
 from app.api.routers.api import router
+
+
 # from app.core.settings import config
 
 def init_routers(app_: FastAPI) -> None:
@@ -18,15 +20,17 @@ def init_routers(app_: FastAPI) -> None:
     # admin dashboard 
     admin = Admin(app_, engine)
     admin.add_view(UserAdmin)
+    admin.add_view(OrderAdmin)
 
 
 origins = [
     "*",
-	# "http://localhost.tiangolo.com",
-	# "https://localhost.tiangolo.com",
-	# "http://localhost",
-	# "http://localhost:8080",
+    # "http://localhost.tiangolo.com",
+    # "https://localhost.tiangolo.com",
+    # "http://localhost",
+    # "http://localhost:8080",
 ]
+
 
 def make_middleware() -> List[Middleware]:
     middleware = [

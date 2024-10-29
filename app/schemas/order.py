@@ -27,6 +27,27 @@ class Service(int, Enum):
     calculations = 5
 
 
+class CitationStyle(int, Enum):
+    APA_6th = 0
+    APA_7th = 1
+    ASA = 2
+    Bluebook = 3
+    Chicago_Turabian = 4
+    Harvard = 5
+    IEEE = 6
+    MLA = 7
+    Other = 8
+    Not_applicable = 9
+
+
+class Academic(int, Enum):
+    high_school = 0
+    college = 1
+    bachelors = 2
+    masters = 3
+    doctorate = 4
+
+
 class OrderBase(BaseModel):
     product: Optional[int]
     deadline: Optional[datetime]
@@ -53,7 +74,7 @@ class OrderCreate(BaseModel):
     product: int
     deadline: datetime
     language: Language
-    level: int
+    level: Academic
     service: Service
     quantity: int
     space: int
@@ -63,7 +84,7 @@ class OrderCreate(BaseModel):
     description: str
     subject: str
     number_of_sources: int
-    style: int
+    style: CitationStyle
     is_private: bool
     client_id: str
     status: Optional[OrderStatus] = OrderStatus.draft
@@ -77,7 +98,7 @@ class OrderUpdate(BaseModel):
     product: Optional[int]
     deadline: Optional[datetime]
     language: Optional[Language]
-    level: Optional[int]
+    level: Optional[Academic]
     service: Optional[Service]
     quantity: Optional[int]
     space: Optional[int]
@@ -87,7 +108,7 @@ class OrderUpdate(BaseModel):
     description: Optional[str]
     subject: Optional[str]
     number_of_sources: Optional[int]
-    style: Optional[int]
+    style: Optional[CitationStyle]
     is_private: Optional[bool]
     client_id: Optional[str]
     status: Optional[OrderStatus]

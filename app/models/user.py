@@ -33,7 +33,7 @@ writer_languages = Table(
 )
 
 
-class UserRole(str, PythonEnum):
+class UserRole(PythonEnum):
     client = "client"
     admin = "admin"
     writer = "writer"

@@ -39,3 +39,6 @@ class Transaction(Base):
     updated_at = Column(DateTime, default=func.now(), onupdate=func.now())
     # Define relationship to User
     user = relationship("User", back_populates="transactions")
+
+
+metadata = Base.metadata
