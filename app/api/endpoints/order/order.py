@@ -1,3 +1,5 @@
+import json
+import os
 from typing import Optional, List
 
 from fastapi import APIRouter, Depends, HTTPException
@@ -9,6 +11,8 @@ from app.models.order import Order
 from app.core.dependencies import get_db
 
 order_module = APIRouter()
+
+ORDER_OPTIONS_FILE = os.path.join(os.path.dirname(__file__), "../../../data/order_options.json")
 
 
 @order_module.post("/orders/", response_model=OrderResponse)
@@ -113,3 +117,15 @@ def list_orders_by_user(user_id: str, db: Session = Depends(get_db), status: Opt
         query = query.filter(Order.status == status)
 
     return query.all()
+
+
+@order_module.get("/order/order_options/")
+async def get_order_options():
+    try:
+        with open(ORDER_OPTIONS_FILE, "r") as file:
+            order_options = json.load(file)
+        return order_options
+    except FileNotFoundError:
+        raise HTTPException(status_code=404, detail="Order options file not found")
+    except json.JSONDecodeError:
+        raise HTTPException(status_code=500, detail="Error decoding JSON file")

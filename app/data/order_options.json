@@ -1,0 +1,2490 @@
+{
+  "services": [
+    {
+      "value": 1,
+      "title": "Writing",
+      "is_active": true
+    },
+    {
+      "value": 2,
+      "title": "Rewriting",
+      "is_active": true
+    },
+    {
+      "value": 3,
+      "title": "Editing",
+      "is_active": true
+    },
+    {
+      "value": 4,
+      "title": "Proofreading",
+      "is_active": true
+    },
+    {
+      "value": 5,
+      "title": "Problem solving",
+      "is_active": true
+    },
+    {
+      "value": 6,
+      "title": "Calculations",
+      "is_active": true
+    }
+  ],
+  "subjects": [
+    {
+      "value": 29,
+      "title": "Education",
+      "is_active": true,
+      "subject_group_id": 107,
+      "subject_group_title": "Education",
+      "recent": true
+    },
+    {
+      "value": 63,
+      "title": "Nursing",
+      "is_active": true,
+      "subject_group_id": 118,
+      "subject_group_title": "Healthcare and life sciences",
+      "recent": true
+    },
+    {
+      "value": 1,
+      "title": "Art",
+      "is_active": true,
+      "subject_group_id": 101,
+      "subject_group_title": "Arts",
+      "recent": false
+    },
+    {
+      "value": 3,
+      "title": "Dance",
+      "is_active": true,
+      "subject_group_id": 101,
+      "subject_group_title": "Arts",
+      "recent": false
+    },
+    {
+      "value": 139,
+      "title": "Design and modeling",
+      "is_active": true,
+      "subject_group_id": 101,
+      "subject_group_title": "Arts",
+      "recent": false
+    },
+    {
+      "value": 5,
+      "title": "Drama and theatre",
+      "is_active": true,
+      "subject_group_id": 101,
+      "subject_group_title": "Arts",
+      "recent": false
+    },
+    {
+      "value": 104,
+      "title": "Fashion",
+      "is_active": true,
+      "subject_group_id": 101,
+      "subject_group_title": "Arts",
+      "recent": false
+    },
+    {
+      "value": 7,
+      "title": "Music",
+      "is_active": true,
+      "subject_group_id": 101,
+      "subject_group_title": "Arts",
+      "recent": false
+    },
+    {
+      "value": 8,
+      "title": "Painting",
+      "is_active": true,
+      "subject_group_id": 101,
+      "subject_group_title": "Arts",
+      "recent": false
+    },
+    {
+      "value": 113,
+      "title": "Photography",
+      "is_active": true,
+      "subject_group_id": 101,
+      "subject_group_title": "Arts",
+      "recent": false
+    },
+    {
+      "value": 6,
+      "title": "Visual arts",
+      "is_active": true,
+      "subject_group_id": 101,
+      "subject_group_title": "Arts",
+      "recent": false
+    },
+    {
+      "value": 20,
+      "title": "Accounting",
+      "is_active": true,
+      "subject_group_id": 104,
+      "subject_group_title": "Business administration",
+      "recent": false
+    },
+    {
+      "value": 11,
+      "title": "Business and management",
+      "is_active": true,
+      "subject_group_id": 104,
+      "subject_group_title": "Business administration",
+      "recent": false
+    },
+    {
+      "value": 142,
+      "title": "Employee welfare",
+      "is_active": true,
+      "subject_group_id": 104,
+      "subject_group_title": "Business administration",
+      "recent": false
+    },
+    {
+      "value": 102,
+      "title": "Entrepreneurship",
+      "is_active": true,
+      "subject_group_id": 104,
+      "subject_group_title": "Business administration",
+      "recent": false
+    },
+    {
+      "value": 147,
+      "title": "Hospitality management",
+      "is_active": true,
+      "subject_group_id": 104,
+      "subject_group_title": "Business administration",
+      "recent": false
+    },
+    {
+      "value": 10154,
+      "title": "Leadership",
+      "is_active": true,
+      "subject_group_id": 104,
+      "subject_group_title": "Business administration",
+      "recent": false
+    },
+    {
+      "value": 27,
+      "title": "Logistics",
+      "is_active": true,
+      "subject_group_id": 104,
+      "subject_group_title": "Business administration",
+      "recent": false
+    },
+    {
+      "value": 154,
+      "title": "Occupational safety and health administration",
+      "is_active": true,
+      "subject_group_id": 104,
+      "subject_group_title": "Business administration",
+      "recent": false
+    },
+    {
+      "value": 100,
+      "title": "C#",
+      "is_active": true,
+      "subject_group_id": 106,
+      "subject_group_title": "Computer science",
+      "recent": false
+    },
+    {
+      "value": 99,
+      "title": "C++",
+      "is_active": true,
+      "subject_group_id": 106,
+      "subject_group_title": "Computer science",
+      "recent": false
+    },
+    {
+      "value": 96,
+      "title": "Code",
+      "is_active": true,
+      "subject_group_id": 106,
+      "subject_group_title": "Computer science",
+      "recent": false
+    },
+    {
+      "value": 83,
+      "title": "Computer science",
+      "is_active": true,
+      "subject_group_id": 106,
+      "subject_group_title": "Computer science",
+      "recent": false
+    },
+    {
+      "value": 97,
+      "title": "Cryptography",
+      "is_active": true,
+      "subject_group_id": 106,
+      "subject_group_title": "Computer science",
+      "recent": false
+    },
+    {
+      "value": 137,
+      "title": "Cyber security",
+      "is_active": true,
+      "subject_group_id": 106,
+      "subject_group_title": "Computer science",
+      "recent": false
+    },
+    {
+      "value": 140,
+      "title": "Digital science",
+      "is_active": true,
+      "subject_group_id": 106,
+      "subject_group_title": "Computer science",
+      "recent": false
+    },
+    {
+      "value": 85,
+      "title": "Information technology (IT)",
+      "is_active": true,
+      "subject_group_id": 106,
+      "subject_group_title": "Computer science",
+      "recent": false
+    },
+    {
+      "value": 109,
+      "title": "Java",
+      "is_active": true,
+      "subject_group_id": 106,
+      "subject_group_title": "Computer science",
+      "recent": false
+    },
+    {
+      "value": 110,
+      "title": "Javascript",
+      "is_active": true,
+      "subject_group_id": 106,
+      "subject_group_title": "Computer science",
+      "recent": false
+    },
+    {
+      "value": 114,
+      "title": "PHP",
+      "is_active": true,
+      "subject_group_id": 106,
+      "subject_group_title": "Computer science",
+      "recent": false
+    },
+    {
+      "value": 118,
+      "title": "Programming",
+      "is_active": true,
+      "subject_group_id": 106,
+      "subject_group_title": "Computer science",
+      "recent": false
+    },
+    {
+      "value": 119,
+      "title": "Python",
+      "is_active": true,
+      "subject_group_id": 106,
+      "subject_group_title": "Computer science",
+      "recent": false
+    },
+    {
+      "value": 158,
+      "title": "Software and applications",
+      "is_active": true,
+      "subject_group_id": 106,
+      "subject_group_title": "Computer science",
+      "recent": false
+    },
+    {
+      "value": 123,
+      "title": "SQL",
+      "is_active": true,
+      "subject_group_id": 106,
+      "subject_group_title": "Computer science",
+      "recent": false
+    },
+    {
+      "value": 86,
+      "title": "Web design",
+      "is_active": true,
+      "subject_group_id": 106,
+      "subject_group_title": "Computer science",
+      "recent": false
+    },
+    {
+      "value": 68,
+      "title": "Agriculture",
+      "is_active": true,
+      "subject_group_id": 102,
+      "subject_group_title": "Economics",
+      "recent": false
+    },
+    {
+      "value": 19,
+      "title": "Economics",
+      "is_active": true,
+      "subject_group_id": 102,
+      "subject_group_title": "Economics",
+      "recent": false
+    },
+    {
+      "value": 24,
+      "title": "Finance",
+      "is_active": true,
+      "subject_group_id": 102,
+      "subject_group_title": "Economics",
+      "recent": false
+    },
+    {
+      "value": 26,
+      "title": "Investing and financial markets",
+      "is_active": true,
+      "subject_group_id": 102,
+      "subject_group_title": "Economics",
+      "recent": false
+    },
+    {
+      "value": 131,
+      "title": "Applications and forms",
+      "is_active": true,
+      "subject_group_id": 107,
+      "subject_group_title": "Education",
+      "recent": false
+    },
+    {
+      "value": 30,
+      "title": "Application writing",
+      "is_active": true,
+      "subject_group_id": 107,
+      "subject_group_title": "Education",
+      "recent": false
+    },
+    {
+      "value": 18,
+      "title": "Creative writing",
+      "is_active": true,
+      "subject_group_id": 107,
+      "subject_group_title": "Education",
+      "recent": false
+    },
+    {
+      "value": 29,
+      "title": "Education",
+      "is_active": true,
+      "subject_group_id": 107,
+      "subject_group_title": "Education",
+      "recent": false
+    },
+    {
+      "value": 156,
+      "title": "Research methods",
+      "is_active": true,
+      "subject_group_id": 107,
+      "subject_group_title": "Education",
+      "recent": false
+    },
+    {
+      "value": 120,
+      "title": "Scholarship writing",
+      "is_active": true,
+      "subject_group_id": 107,
+      "subject_group_title": "Education",
+      "recent": false
+    },
+    {
+      "value": 121,
+      "title": "Sex education",
+      "is_active": true,
+      "subject_group_id": 107,
+      "subject_group_title": "Education",
+      "recent": false
+    },
+    {
+      "value": 122,
+      "title": "Special education",
+      "is_active": true,
+      "subject_group_id": 107,
+      "subject_group_title": "Education",
+      "recent": false
+    },
+    {
+      "value": 160,
+      "title": "Study design",
+      "is_active": true,
+      "subject_group_id": 107,
+      "subject_group_title": "Education",
+      "recent": false
+    },
+    {
+      "value": 162,
+      "title": "Writing",
+      "is_active": true,
+      "subject_group_id": 107,
+      "subject_group_title": "Education",
+      "recent": false
+    },
+    {
+      "value": 2,
+      "title": "Architecture",
+      "is_active": true,
+      "subject_group_id": 108,
+      "subject_group_title": "Engineering",
+      "recent": false
+    },
+    {
+      "value": 82,
+      "title": "Aviation",
+      "is_active": true,
+      "subject_group_id": 108,
+      "subject_group_title": "Engineering",
+      "recent": false
+    },
+    {
+      "value": 34,
+      "title": "Engineering",
+      "is_active": true,
+      "subject_group_id": 108,
+      "subject_group_title": "Engineering",
+      "recent": false
+    },
+    {
+      "value": 150,
+      "title": "Innovation and technology",
+      "is_active": true,
+      "subject_group_id": 108,
+      "subject_group_title": "Engineering",
+      "recent": false
+    },
+    {
+      "value": 80,
+      "title": "Technology",
+      "is_active": true,
+      "subject_group_id": 108,
+      "subject_group_title": "Engineering",
+      "recent": false
+    },
+    {
+      "value": 125,
+      "title": "Telecommunications",
+      "is_active": true,
+      "subject_group_id": 108,
+      "subject_group_title": "Engineering",
+      "recent": false
+    },
+    {
+      "value": 128,
+      "title": "Urban and environmental planning",
+      "is_active": true,
+      "subject_group_id": 108,
+      "subject_group_title": "Engineering",
+      "recent": false
+    },
+    {
+      "value": 52,
+      "title": "American literature",
+      "is_active": true,
+      "subject_group_id": 103,
+      "subject_group_title": "English and literature",
+      "recent": false
+    },
+    {
+      "value": 53,
+      "title": "Ancient literature",
+      "is_active": true,
+      "subject_group_id": 103,
+      "subject_group_title": "English and literature",
+      "recent": false
+    },
+    {
+      "value": 35,
+      "title": "English",
+      "is_active": true,
+      "subject_group_id": 103,
+      "subject_group_title": "English and literature",
+      "recent": false
+    },
+    {
+      "value": 151,
+      "title": "Language studies",
+      "is_active": true,
+      "subject_group_id": 103,
+      "subject_group_title": "English and literature",
+      "recent": false
+    },
+    {
+      "value": 51,
+      "title": "Literature",
+      "is_active": true,
+      "subject_group_id": 103,
+      "subject_group_title": "English and literature",
+      "recent": false
+    },
+    {
+      "value": 56,
+      "title": "Shakespeare literature",
+      "is_active": true,
+      "subject_group_id": 103,
+      "subject_group_title": "English and literature",
+      "recent": false
+    },
+    {
+      "value": 94,
+      "title": "Anatomy",
+      "is_active": true,
+      "subject_group_id": 118,
+      "subject_group_title": "Healthcare and life sciences",
+      "recent": false
+    },
+    {
+      "value": 10,
+      "title": "Biology",
+      "is_active": true,
+      "subject_group_id": 118,
+      "subject_group_title": "Healthcare and life sciences",
+      "recent": false
+    },
+    {
+      "value": 101,
+      "title": "Dentistry",
+      "is_active": true,
+      "subject_group_id": 118,
+      "subject_group_title": "Healthcare and life sciences",
+      "recent": false
+    },
+    {
+      "value": 144,
+      "title": "Food and culinary studies",
+      "is_active": true,
+      "subject_group_id": 118,
+      "subject_group_title": "Healthcare and life sciences",
+      "recent": false
+    },
+    {
+      "value": 62,
+      "title": "Healthcare",
+      "is_active": true,
+      "subject_group_id": 118,
+      "subject_group_title": "Healthcare and life sciences",
+      "recent": false
+    },
+    {
+      "value": 60,
+      "title": "Medicine and health",
+      "is_active": true,
+      "subject_group_id": 118,
+      "subject_group_title": "Healthcare and life sciences",
+      "recent": false
+    },
+    {
+      "value": 63,
+      "title": "Nursing",
+      "is_active": true,
+      "subject_group_id": 118,
+      "subject_group_title": "Healthcare and life sciences",
+      "recent": false
+    },
+    {
+      "value": 64,
+      "title": "Nutrition",
+      "is_active": true,
+      "subject_group_id": 118,
+      "subject_group_title": "Healthcare and life sciences",
+      "recent": false
+    },
+    {
+      "value": 65,
+      "title": "Pharmacology",
+      "is_active": true,
+      "subject_group_id": 118,
+      "subject_group_title": "Healthcare and life sciences",
+      "recent": false
+    },
+    {
+      "value": 155,
+      "title": "Physical education",
+      "is_active": true,
+      "subject_group_id": 118,
+      "subject_group_title": "Healthcare and life sciences",
+      "recent": false
+    },
+    {
+      "value": 115,
+      "title": "Physiology",
+      "is_active": true,
+      "subject_group_id": 118,
+      "subject_group_title": "Healthcare and life sciences",
+      "recent": false
+    },
+    {
+      "value": 116,
+      "title": "Psychiatry",
+      "is_active": true,
+      "subject_group_id": 118,
+      "subject_group_title": "Healthcare and life sciences",
+      "recent": false
+    },
+    {
+      "value": 66,
+      "title": "Sports and athletics",
+      "is_active": true,
+      "subject_group_id": 118,
+      "subject_group_title": "Healthcare and life sciences",
+      "recent": false
+    },
+    {
+      "value": 127,
+      "title": "Veterinary science",
+      "is_active": true,
+      "subject_group_id": 118,
+      "subject_group_title": "Healthcare and life sciences",
+      "recent": false
+    },
+    {
+      "value": 39,
+      "title": "American history",
+      "is_active": true,
+      "subject_group_id": 105,
+      "subject_group_title": "History",
+      "recent": false
+    },
+    {
+      "value": 69,
+      "title": "Anthropology",
+      "is_active": true,
+      "subject_group_id": 105,
+      "subject_group_title": "History",
+      "recent": false
+    },
+    {
+      "value": 37,
+      "title": "History",
+      "is_active": true,
+      "subject_group_id": 105,
+      "subject_group_title": "History",
+      "recent": false
+    },
+    {
+      "value": 41,
+      "title": "Canadian studies",
+      "is_active": true,
+      "subject_group_id": 110,
+      "subject_group_title": "Humanities",
+      "recent": false
+    },
+    {
+      "value": 91,
+      "title": "Gender studies",
+      "is_active": true,
+      "subject_group_id": 110,
+      "subject_group_title": "Humanities",
+      "recent": false
+    },
+    {
+      "value": 10155,
+      "title": "Globalization",
+      "is_active": true,
+      "subject_group_id": 110,
+      "subject_group_title": "Humanities",
+      "recent": false
+    },
+    {
+      "value": 149,
+      "title": "Information ethics",
+      "is_active": true,
+      "subject_group_id": 110,
+      "subject_group_title": "Humanities",
+      "recent": false
+    },
+    {
+      "value": 16,
+      "title": "Journalism",
+      "is_active": true,
+      "subject_group_id": 110,
+      "subject_group_title": "Humanities",
+      "recent": false
+    },
+    {
+      "value": 50,
+      "title": "Linguistics",
+      "is_active": true,
+      "subject_group_id": 110,
+      "subject_group_title": "Humanities",
+      "recent": false
+    },
+    {
+      "value": 152,
+      "title": "Mythology",
+      "is_active": true,
+      "subject_group_id": 110,
+      "subject_group_title": "Humanities",
+      "recent": false
+    },
+    {
+      "value": 87,
+      "title": "Tourism",
+      "is_active": true,
+      "subject_group_id": 110,
+      "subject_group_title": "Humanities",
+      "recent": false
+    },
+    {
+      "value": 10156,
+      "title": "Criminal justice",
+      "is_active": true,
+      "subject_group_id": 109,
+      "subject_group_title": "Legal",
+      "recent": false
+    },
+    {
+      "value": 48,
+      "title": "Criminology",
+      "is_active": true,
+      "subject_group_id": 109,
+      "subject_group_title": "Legal",
+      "recent": false
+    },
+    {
+      "value": 106,
+      "title": "Forensic science",
+      "is_active": true,
+      "subject_group_id": 109,
+      "subject_group_title": "Legal",
+      "recent": false
+    },
+    {
+      "value": 47,
+      "title": "Law",
+      "is_active": true,
+      "subject_group_id": 109,
+      "subject_group_title": "Legal",
+      "recent": false
+    },
+    {
+      "value": 117,
+      "title": "Public administration",
+      "is_active": true,
+      "subject_group_id": 109,
+      "subject_group_title": "Legal",
+      "recent": false
+    },
+    {
+      "value": 14,
+      "title": "Advertising",
+      "is_active": true,
+      "subject_group_id": 111,
+      "subject_group_title": "Marketing",
+      "recent": false
+    },
+    {
+      "value": 58,
+      "title": "Marketing",
+      "is_active": true,
+      "subject_group_id": 111,
+      "subject_group_title": "Marketing",
+      "recent": false
+    },
+    {
+      "value": 17,
+      "title": "Public relations",
+      "is_active": true,
+      "subject_group_id": 111,
+      "subject_group_title": "Marketing",
+      "recent": false
+    },
+    {
+      "value": 93,
+      "title": "Algebra",
+      "is_active": true,
+      "subject_group_id": 112,
+      "subject_group_title": "Mathematics and statistics",
+      "recent": false
+    },
+    {
+      "value": 129,
+      "title": "Analytics",
+      "is_active": true,
+      "subject_group_id": 112,
+      "subject_group_title": "Mathematics and statistics",
+      "recent": false
+    },
+    {
+      "value": 95,
+      "title": "Calculus",
+      "is_active": true,
+      "subject_group_id": 112,
+      "subject_group_title": "Mathematics and statistics",
+      "recent": false
+    },
+    {
+      "value": 138,
+      "title": "Data science",
+      "is_active": true,
+      "subject_group_id": 112,
+      "subject_group_title": "Mathematics and statistics",
+      "recent": false
+    },
+    {
+      "value": 103,
+      "title": "Excel",
+      "is_active": true,
+      "subject_group_id": 112,
+      "subject_group_title": "Mathematics and statistics",
+      "recent": false
+    },
+    {
+      "value": 107,
+      "title": "Geometry",
+      "is_active": true,
+      "subject_group_id": 112,
+      "subject_group_title": "Mathematics and statistics",
+      "recent": false
+    },
+    {
+      "value": 59,
+      "title": "Mathematics",
+      "is_active": true,
+      "subject_group_id": 112,
+      "subject_group_title": "Mathematics and statistics",
+      "recent": false
+    },
+    {
+      "value": 124,
+      "title": "Statistics",
+      "is_active": true,
+      "subject_group_id": 112,
+      "subject_group_title": "Mathematics and statistics",
+      "recent": false
+    },
+    {
+      "value": 126,
+      "title": "Trigonometry",
+      "is_active": true,
+      "subject_group_id": 112,
+      "subject_group_title": "Mathematics and statistics",
+      "recent": false
+    },
+    {
+      "value": 130,
+      "title": "Animal science",
+      "is_active": true,
+      "subject_group_id": 113,
+      "subject_group_title": "Natural sciences",
+      "recent": false
+    },
+    {
+      "value": 70,
+      "title": "Astronomy",
+      "is_active": true,
+      "subject_group_id": 113,
+      "subject_group_title": "Natural sciences",
+      "recent": false
+    },
+    {
+      "value": 132,
+      "title": "Atmospheric science",
+      "is_active": true,
+      "subject_group_id": 113,
+      "subject_group_title": "Natural sciences",
+      "recent": false
+    },
+    {
+      "value": 12,
+      "title": "Chemistry",
+      "is_active": true,
+      "subject_group_id": 113,
+      "subject_group_title": "Natural sciences",
+      "recent": false
+    },
+    {
+      "value": 71,
+      "title": "Environmental science",
+      "is_active": true,
+      "subject_group_id": 113,
+      "subject_group_title": "Natural sciences",
+      "recent": false
+    },
+    {
+      "value": 72,
+      "title": "Geography",
+      "is_active": true,
+      "subject_group_id": 113,
+      "subject_group_title": "Natural sciences",
+      "recent": false
+    },
+    {
+      "value": 73,
+      "title": "Geology",
+      "is_active": true,
+      "subject_group_id": 113,
+      "subject_group_title": "Natural sciences",
+      "recent": false
+    },
+    {
+      "value": 112,
+      "title": "Natural science",
+      "is_active": true,
+      "subject_group_id": 113,
+      "subject_group_title": "Natural sciences",
+      "recent": false
+    },
+    {
+      "value": 75,
+      "title": "Physics",
+      "is_active": true,
+      "subject_group_id": 113,
+      "subject_group_title": "Natural sciences",
+      "recent": false
+    },
+    {
+      "value": 36,
+      "title": "Ethics",
+      "is_active": true,
+      "subject_group_id": 117,
+      "subject_group_title": "Philosophy",
+      "recent": false
+    },
+    {
+      "value": 74,
+      "title": "Philosophy",
+      "is_active": true,
+      "subject_group_id": 117,
+      "subject_group_title": "Philosophy",
+      "recent": false
+    },
+    {
+      "value": 78,
+      "title": "Religion and theology",
+      "is_active": true,
+      "subject_group_id": 117,
+      "subject_group_title": "Philosophy",
+      "recent": false
+    },
+    {
+      "value": 141,
+      "title": "Emergency management",
+      "is_active": true,
+      "subject_group_id": 116,
+      "subject_group_title": "Political sciences",
+      "recent": false
+    },
+    {
+      "value": 145,
+      "title": "Global issues & disaster and crisis management",
+      "is_active": true,
+      "subject_group_id": 116,
+      "subject_group_title": "Political sciences",
+      "recent": false
+    },
+    {
+      "value": 146,
+      "title": "Global studies",
+      "is_active": true,
+      "subject_group_id": 116,
+      "subject_group_title": "Political sciences",
+      "recent": false
+    },
+    {
+      "value": 148,
+      "title": "Immigration and citizenship",
+      "is_active": true,
+      "subject_group_id": 116,
+      "subject_group_title": "Political sciences",
+      "recent": false
+    },
+    {
+      "value": 25,
+      "title": "International affairs / relations",
+      "is_active": true,
+      "subject_group_id": 116,
+      "subject_group_title": "Political sciences",
+      "recent": false
+    },
+    {
+      "value": 111,
+      "title": "Military science",
+      "is_active": true,
+      "subject_group_id": 116,
+      "subject_group_title": "Political sciences",
+      "recent": false
+    },
+    {
+      "value": 76,
+      "title": "Political science",
+      "is_active": true,
+      "subject_group_id": 116,
+      "subject_group_title": "Political sciences",
+      "recent": false
+    },
+    {
+      "value": 133,
+      "title": "Behavioral science and human development",
+      "is_active": true,
+      "subject_group_id": 115,
+      "subject_group_title": "Social sciences",
+      "recent": false
+    },
+    {
+      "value": 134,
+      "title": "Career and professional development",
+      "is_active": true,
+      "subject_group_id": 115,
+      "subject_group_title": "Social sciences",
+      "recent": false
+    },
+    {
+      "value": 13,
+      "title": "Communications and media",
+      "is_active": true,
+      "subject_group_id": 115,
+      "subject_group_title": "Social sciences",
+      "recent": false
+    },
+    {
+      "value": 135,
+      "title": "Community and society",
+      "is_active": true,
+      "subject_group_id": 115,
+      "subject_group_title": "Social sciences",
+      "recent": false
+    },
+    {
+      "value": 98,
+      "title": "Cultural studies",
+      "is_active": true,
+      "subject_group_id": 115,
+      "subject_group_title": "Social sciences",
+      "recent": false
+    },
+    {
+      "value": 143,
+      "title": "Family and child studies",
+      "is_active": true,
+      "subject_group_id": 115,
+      "subject_group_title": "Social sciences",
+      "recent": false
+    },
+    {
+      "value": 105,
+      "title": "Feminism",
+      "is_active": true,
+      "subject_group_id": 115,
+      "subject_group_title": "Social sciences",
+      "recent": false
+    },
+    {
+      "value": 108,
+      "title": "Human relations",
+      "is_active": true,
+      "subject_group_id": 115,
+      "subject_group_title": "Social sciences",
+      "recent": false
+    },
+    {
+      "value": 77,
+      "title": "Psychology",
+      "is_active": true,
+      "subject_group_id": 115,
+      "subject_group_title": "Social sciences",
+      "recent": false
+    },
+    {
+      "value": 157,
+      "title": "Social science",
+      "is_active": true,
+      "subject_group_id": 115,
+      "subject_group_title": "Social sciences",
+      "recent": false
+    },
+    {
+      "value": 92,
+      "title": "Social work",
+      "is_active": true,
+      "subject_group_id": 115,
+      "subject_group_title": "Social sciences",
+      "recent": false
+    },
+    {
+      "value": 79,
+      "title": "Sociology",
+      "is_active": true,
+      "subject_group_id": 115,
+      "subject_group_title": "Social sciences",
+      "recent": false
+    },
+    {
+      "value": 159,
+      "title": "Student activities",
+      "is_active": true,
+      "subject_group_id": 115,
+      "subject_group_title": "Social sciences",
+      "recent": false
+    }
+  ],
+  "types": [
+    {
+      "value": 1,
+      "title": "Essay (any type)",
+      "is_active": true,
+      "type_group_title": "Assignment",
+      "type_group_value": 1,
+      "quantity_type_key": "pages",
+      "fields": [
+        {
+          "key_field": "style",
+          "is_visible": true,
+          "is_required": false,
+          "default_value": null,
+          "id": 1,
+          "default_id": null
+        },
+        {
+          "key_field": "service",
+          "is_visible": true,
+          "is_required": true,
+          "default_value": null,
+          "id": 3,
+          "default_id": null
+        },
+        {
+          "key_field": "education_level",
+          "is_visible": true,
+          "is_required": true,
+          "default_value": null,
+          "id": 4,
+          "default_id": null
+        },
+        {
+          "key_field": "sources",
+          "is_visible": true,
+          "is_required": false,
+          "default_value": null,
+          "id": 2,
+          "default_id": 0
+        }
+      ],
+      "popular": 1
+    },
+    {
+      "value": 2,
+      "title": "Admission essay",
+      "is_active": true,
+      "type_group_title": "Assignment",
+      "type_group_value": 1,
+      "quantity_type_key": "pages",
+      "fields": [],
+      "popular": null
+    },
+    {
+      "value": 45,
+      "title": "Analysis (any type)",
+      "is_active": true,
+      "type_group_title": "Assignment",
+      "type_group_value": 1,
+      "quantity_type_key": "pages",
+      "fields": [],
+      "popular": null
+    },
+    {
+      "value": 3,
+      "title": "Annotated bibliography",
+      "is_active": true,
+      "type_group_title": "Assignment",
+      "type_group_value": 1,
+      "quantity_type_key": "pages",
+      "fields": [],
+      "popular": null
+    },
+    {
+      "value": 5,
+      "title": "Article review",
+      "is_active": true,
+      "type_group_title": "Assignment",
+      "type_group_value": 1,
+      "quantity_type_key": "pages",
+      "fields": [],
+      "popular": null
+    },
+    {
+      "value": 33,
+      "title": "Article (written)",
+      "is_active": true,
+      "type_group_title": "Assignment",
+      "type_group_value": 1,
+      "quantity_type_key": "pages",
+      "fields": [],
+      "popular": null
+    },
+    {
+      "value": 6,
+      "title": "Book/Movie review",
+      "is_active": true,
+      "type_group_title": "Assignment",
+      "type_group_value": 1,
+      "quantity_type_key": "pages",
+      "fields": [],
+      "popular": null
+    },
+    {
+      "value": 7,
+      "title": "Business plan",
+      "is_active": true,
+      "type_group_title": "Assignment",
+      "type_group_value": 1,
+      "quantity_type_key": "pages",
+      "fields": [],
+      "popular": null
+    },
+    {
+      "value": 34,
+      "title": "Business proposal",
+      "is_active": true,
+      "type_group_title": "Assignment",
+      "type_group_value": 1,
+      "quantity_type_key": "pages",
+      "fields": [],
+      "popular": null
+    },
+    {
+      "value": 8,
+      "title": "Case study",
+      "is_active": true,
+      "type_group_title": "Assignment",
+      "type_group_value": 1,
+      "quantity_type_key": "pages",
+      "fields": [],
+      "popular": 6
+    },
+    {
+      "value": 36,
+      "title": "Coursework",
+      "is_active": true,
+      "type_group_title": "Assignment",
+      "type_group_value": 1,
+      "quantity_type_key": "pages",
+      "fields": [
+        {
+          "key_field": "service",
+          "is_visible": true,
+          "is_required": true,
+          "default_value": null,
+          "id": 67,
+          "default_id": null
+        },
+        {
+          "key_field": "education_level",
+          "is_visible": true,
+          "is_required": true,
+          "default_value": null,
+          "id": 68,
+          "default_id": null
+        },
+        {
+          "key_field": "style",
+          "is_visible": false,
+          "is_required": false,
+          "default_value": "Other",
+          "id": 65,
+          "default_id": 5
+        },
+        {
+          "key_field": "sources",
+          "is_visible": false,
+          "is_required": false,
+          "default_value": "Any",
+          "id": 66,
+          "default_id": 0
+        }
+      ],
+      "popular": null
+    },
+    {
+      "value": 35,
+      "title": "Capstone project",
+      "is_active": true,
+      "type_group_title": "Assignment",
+      "type_group_value": 1,
+      "quantity_type_key": "pages",
+      "fields": [],
+      "popular": null
+    },
+    {
+      "value": 10,
+      "title": "Creative writing",
+      "is_active": true,
+      "type_group_title": "Assignment",
+      "type_group_value": 1,
+      "quantity_type_key": "pages",
+      "fields": [],
+      "popular": null
+    },
+    {
+      "value": 11,
+      "title": "Critical thinking",
+      "is_active": true,
+      "type_group_title": "Assignment",
+      "type_group_value": 1,
+      "quantity_type_key": "pages",
+      "fields": [],
+      "popular": null
+    },
+    {
+      "value": 37,
+      "title": "Discussion post",
+      "is_active": true,
+      "type_group_title": "Assignment",
+      "type_group_value": 1,
+      "quantity_type_key": "pages",
+      "fields": [],
+      "popular": 3
+    },
+    {
+      "value": 38,
+      "title": "Lab report",
+      "is_active": true,
+      "type_group_title": "Assignment",
+      "type_group_value": 1,
+      "quantity_type_key": "pages",
+      "fields": [],
+      "popular": null
+    },
+    {
+      "value": 39,
+      "title": "Letter/Memos",
+      "is_active": true,
+      "type_group_title": "Assignment",
+      "type_group_value": 1,
+      "quantity_type_key": "pages",
+      "fields": [],
+      "popular": null
+    },
+    {
+      "value": 19,
+      "title": "Literature review",
+      "is_active": true,
+      "type_group_title": "Assignment",
+      "type_group_value": 1,
+      "quantity_type_key": "pages",
+      "fields": [],
+      "popular": null
+    },
+    {
+      "value": 41,
+      "title": "Outline",
+      "is_active": true,
+      "type_group_title": "Assignment",
+      "type_group_value": 1,
+      "quantity_type_key": "pages",
+      "fields": [],
+      "popular": null
+    },
+    {
+      "value": 42,
+      "title": "Personal narrative",
+      "is_active": true,
+      "type_group_title": "Assignment",
+      "type_group_value": 1,
+      "quantity_type_key": "pages",
+      "fields": [],
+      "popular": null
+    },
+    {
+      "value": 12,
+      "title": "Presentation or speech",
+      "is_active": true,
+      "type_group_title": "Assignment",
+      "type_group_value": 1,
+      "quantity_type_key": "pages",
+      "fields": [
+        {
+          "key_field": "style",
+          "is_visible": true,
+          "is_required": false,
+          "default_value": null,
+          "id": 9,
+          "default_id": null
+        },
+        {
+          "key_field": "service",
+          "is_visible": true,
+          "is_required": true,
+          "default_value": null,
+          "id": 11,
+          "default_id": null
+        },
+        {
+          "key_field": "education_level",
+          "is_visible": true,
+          "is_required": true,
+          "default_value": null,
+          "id": 12,
+          "default_id": null
+        },
+        {
+          "key_field": "sources",
+          "is_visible": true,
+          "is_required": false,
+          "default_value": null,
+          "id": 10,
+          "default_id": 0
+        }
+      ],
+      "popular": null
+    },
+    {
+      "value": 43,
+      "title": "Reaction paper",
+      "is_active": true,
+      "type_group_title": "Assignment",
+      "type_group_value": 1,
+      "quantity_type_key": "pages",
+      "fields": [],
+      "popular": null
+    },
+    {
+      "value": 20,
+      "title": "Reflective writing",
+      "is_active": true,
+      "type_group_title": "Assignment",
+      "type_group_value": 1,
+      "quantity_type_key": "pages",
+      "fields": [],
+      "popular": null
+    },
+    {
+      "value": 21,
+      "title": "Report",
+      "is_active": true,
+      "type_group_title": "Assignment",
+      "type_group_value": 1,
+      "quantity_type_key": "pages",
+      "fields": [],
+      "popular": null
+    },
+    {
+      "value": 13,
+      "title": "Research paper",
+      "is_active": true,
+      "type_group_title": "Assignment",
+      "type_group_value": 1,
+      "quantity_type_key": "pages",
+      "fields": [],
+      "popular": 2
+    },
+    {
+      "value": 14,
+      "title": "Research proposal",
+      "is_active": true,
+      "type_group_title": "Assignment",
+      "type_group_value": 1,
+      "quantity_type_key": "pages",
+      "fields": [],
+      "popular": null
+    },
+    {
+      "value": 51,
+      "title": "Systematic review",
+      "is_active": true,
+      "type_group_title": "Assignment",
+      "type_group_value": 1,
+      "quantity_type_key": "pages",
+      "fields": [],
+      "popular": null
+    },
+    {
+      "value": 15,
+      "title": "Term paper",
+      "is_active": true,
+      "type_group_title": "Assignment",
+      "type_group_value": 1,
+      "quantity_type_key": "pages",
+      "fields": [],
+      "popular": null
+    },
+    {
+      "value": 16,
+      "title": "Thesis / Dissertation",
+      "is_active": true,
+      "type_group_title": "Assignment",
+      "type_group_value": 1,
+      "quantity_type_key": "pages",
+      "fields": [],
+      "popular": null
+    },
+    {
+      "value": 32,
+      "title": "PowerPoint presentation",
+      "is_active": true,
+      "type_group_title": "Assignment",
+      "type_group_value": 1,
+      "quantity_type_key": "slides",
+      "fields": [
+        {
+          "key_field": "style",
+          "is_visible": true,
+          "is_required": false,
+          "default_value": null,
+          "id": 5,
+          "default_id": null
+        },
+        {
+          "key_field": "service",
+          "is_visible": true,
+          "is_required": true,
+          "default_value": null,
+          "id": 7,
+          "default_id": null
+        },
+        {
+          "key_field": "education_level",
+          "is_visible": true,
+          "is_required": true,
+          "default_value": null,
+          "id": 8,
+          "default_id": null
+        },
+        {
+          "key_field": "sources",
+          "is_visible": true,
+          "is_required": false,
+          "default_value": null,
+          "id": 6,
+          "default_id": 0
+        }
+      ],
+      "popular": null
+    },
+    {
+      "value": 50,
+      "title": "PowerPoint presentation with speaker notes",
+      "is_active": true,
+      "type_group_title": "Assignment",
+      "type_group_value": 1,
+      "quantity_type_key": "slides_with_notes",
+      "fields": [
+        {
+          "key_field": "style",
+          "is_visible": true,
+          "is_required": false,
+          "default_value": null,
+          "id": 73,
+          "default_id": null
+        },
+        {
+          "key_field": "service",
+          "is_visible": true,
+          "is_required": true,
+          "default_value": null,
+          "id": 75,
+          "default_id": null
+        },
+        {
+          "key_field": "education_level",
+          "is_visible": true,
+          "is_required": true,
+          "default_value": null,
+          "id": 76,
+          "default_id": null
+        },
+        {
+          "key_field": "sources",
+          "is_visible": true,
+          "is_required": false,
+          "default_value": null,
+          "id": 74,
+          "default_id": 0
+        }
+      ],
+      "popular": 4
+    },
+    {
+      "value": 17,
+      "title": "Other",
+      "is_active": true,
+      "type_group_title": "Assignment",
+      "type_group_value": 1,
+      "quantity_type_key": "pages",
+      "fields": [],
+      "popular": null
+    },
+    {
+      "value": 22,
+      "title": "Homework (any type)",
+      "is_active": true,
+      "type_group_title": "Homework",
+      "type_group_value": 2,
+      "quantity_type_key": "questions",
+      "fields": [
+        {
+          "key_field": "service",
+          "is_visible": true,
+          "is_required": true,
+          "default_value": null,
+          "id": 35,
+          "default_id": null
+        },
+        {
+          "key_field": "education_level",
+          "is_visible": true,
+          "is_required": true,
+          "default_value": null,
+          "id": 36,
+          "default_id": null
+        },
+        {
+          "key_field": "style",
+          "is_visible": false,
+          "is_required": false,
+          "default_value": "Other",
+          "id": 33,
+          "default_id": 5
+        },
+        {
+          "key_field": "sources",
+          "is_visible": false,
+          "is_required": false,
+          "default_value": "Any",
+          "id": 34,
+          "default_id": 0
+        }
+      ],
+      "popular": 5
+    },
+    {
+      "value": 23,
+      "title": "Biology",
+      "is_active": true,
+      "type_group_title": "Homework",
+      "type_group_value": 2,
+      "quantity_type_key": "questions",
+      "fields": [
+        {
+          "key_field": "service",
+          "is_visible": true,
+          "is_required": true,
+          "default_value": null,
+          "id": 39,
+          "default_id": null
+        },
+        {
+          "key_field": "education_level",
+          "is_visible": true,
+          "is_required": true,
+          "default_value": null,
+          "id": 40,
+          "default_id": null
+        },
+        {
+          "key_field": "style",
+          "is_visible": false,
+          "is_required": false,
+          "default_value": "Other",
+          "id": 37,
+          "default_id": 5
+        },
+        {
+          "key_field": "sources",
+          "is_visible": false,
+          "is_required": false,
+          "default_value": "Any",
+          "id": 38,
+          "default_id": 0
+        }
+      ],
+      "popular": null
+    },
+    {
+      "value": 24,
+      "title": "Chemistry",
+      "is_active": true,
+      "type_group_title": "Homework",
+      "type_group_value": 2,
+      "quantity_type_key": "questions",
+      "fields": [
+        {
+          "key_field": "service",
+          "is_visible": true,
+          "is_required": true,
+          "default_value": null,
+          "id": 43,
+          "default_id": null
+        },
+        {
+          "key_field": "education_level",
+          "is_visible": true,
+          "is_required": true,
+          "default_value": null,
+          "id": 44,
+          "default_id": null
+        },
+        {
+          "key_field": "style",
+          "is_visible": false,
+          "is_required": false,
+          "default_value": "Other",
+          "id": 41,
+          "default_id": 5
+        },
+        {
+          "key_field": "sources",
+          "is_visible": false,
+          "is_required": false,
+          "default_value": "Any",
+          "id": 42,
+          "default_id": 0
+        }
+      ],
+      "popular": null
+    },
+    {
+      "value": 52,
+      "title": "Problems",
+      "is_active": false,
+      "type_group_title": "Homework",
+      "type_group_value": 2,
+      "quantity_type_key": "problems",
+      "fields": [],
+      "popular": null
+    },
+    {
+      "value": 25,
+      "title": "Engineering",
+      "is_active": true,
+      "type_group_title": "Homework",
+      "type_group_value": 2,
+      "quantity_type_key": "questions",
+      "fields": [
+        {
+          "key_field": "service",
+          "is_visible": true,
+          "is_required": true,
+          "default_value": null,
+          "id": 47,
+          "default_id": null
+        },
+        {
+          "key_field": "education_level",
+          "is_visible": true,
+          "is_required": true,
+          "default_value": null,
+          "id": 48,
+          "default_id": null
+        },
+        {
+          "key_field": "style",
+          "is_visible": false,
+          "is_required": false,
+          "default_value": "Other",
+          "id": 45,
+          "default_id": 5
+        },
+        {
+          "key_field": "sources",
+          "is_visible": false,
+          "is_required": false,
+          "default_value": "Any",
+          "id": 46,
+          "default_id": 0
+        }
+      ],
+      "popular": null
+    },
+    {
+      "value": 26,
+      "title": "Geography",
+      "is_active": true,
+      "type_group_title": "Homework",
+      "type_group_value": 2,
+      "quantity_type_key": "questions",
+      "fields": [
+        {
+          "key_field": "service",
+          "is_visible": true,
+          "is_required": true,
+          "default_value": null,
+          "id": 51,
+          "default_id": null
+        },
+        {
+          "key_field": "education_level",
+          "is_visible": true,
+          "is_required": true,
+          "default_value": null,
+          "id": 52,
+          "default_id": null
+        },
+        {
+          "key_field": "style",
+          "is_visible": false,
+          "is_required": false,
+          "default_value": "Other",
+          "id": 49,
+          "default_id": 5
+        },
+        {
+          "key_field": "sources",
+          "is_visible": false,
+          "is_required": false,
+          "default_value": "Any",
+          "id": 50,
+          "default_id": 0
+        }
+      ],
+      "popular": null
+    },
+    {
+      "value": 27,
+      "title": "Mathematics",
+      "is_active": true,
+      "type_group_title": "Homework",
+      "type_group_value": 2,
+      "quantity_type_key": "problems",
+      "fields": [
+        {
+          "key_field": "service",
+          "is_visible": true,
+          "is_required": true,
+          "default_value": null,
+          "id": 55,
+          "default_id": null
+        },
+        {
+          "key_field": "education_level",
+          "is_visible": true,
+          "is_required": true,
+          "default_value": null,
+          "id": 56,
+          "default_id": null
+        },
+        {
+          "key_field": "style",
+          "is_visible": false,
+          "is_required": false,
+          "default_value": "Other",
+          "id": 53,
+          "default_id": 5
+        },
+        {
+          "key_field": "sources",
+          "is_visible": false,
+          "is_required": false,
+          "default_value": "Any",
+          "id": 54,
+          "default_id": 0
+        }
+      ],
+      "popular": null
+    },
+    {
+      "value": 28,
+      "title": "Physics",
+      "is_active": true,
+      "type_group_title": "Homework",
+      "type_group_value": 2,
+      "quantity_type_key": "questions",
+      "fields": [
+        {
+          "key_field": "service",
+          "is_visible": true,
+          "is_required": true,
+          "default_value": null,
+          "id": 59,
+          "default_id": null
+        },
+        {
+          "key_field": "education_level",
+          "is_visible": true,
+          "is_required": true,
+          "default_value": null,
+          "id": 60,
+          "default_id": null
+        },
+        {
+          "key_field": "style",
+          "is_visible": false,
+          "is_required": false,
+          "default_value": "Other",
+          "id": 57,
+          "default_id": 5
+        },
+        {
+          "key_field": "sources",
+          "is_visible": false,
+          "is_required": false,
+          "default_value": "Any",
+          "id": 58,
+          "default_id": 0
+        }
+      ],
+      "popular": null
+    },
+    {
+      "value": 29,
+      "title": "Statistics",
+      "is_active": true,
+      "type_group_title": "Homework",
+      "type_group_value": 2,
+      "quantity_type_key": "questions",
+      "fields": [
+        {
+          "key_field": "service",
+          "is_visible": true,
+          "is_required": true,
+          "default_value": null,
+          "id": 63,
+          "default_id": null
+        },
+        {
+          "key_field": "education_level",
+          "is_visible": true,
+          "is_required": true,
+          "default_value": null,
+          "id": 64,
+          "default_id": null
+        },
+        {
+          "key_field": "style",
+          "is_visible": false,
+          "is_required": false,
+          "default_value": "Other",
+          "id": 61,
+          "default_id": 5
+        },
+        {
+          "key_field": "sources",
+          "is_visible": false,
+          "is_required": false,
+          "default_value": "Any",
+          "id": 62,
+          "default_id": 0
+        }
+      ],
+      "popular": null
+    },
+    {
+      "value": 40,
+      "title": "Marketing",
+      "is_active": true,
+      "type_group_title": "Homework",
+      "type_group_value": 2,
+      "quantity_type_key": "pages",
+      "fields": [],
+      "popular": null
+    },
+    {
+      "value": 46,
+      "title": "Programming",
+      "is_active": true,
+      "type_group_title": "Homework",
+      "type_group_value": 2,
+      "quantity_type_key": "tasks",
+      "fields": [
+        {
+          "key_field": "service",
+          "is_visible": true,
+          "is_required": true,
+          "default_value": null,
+          "id": 15,
+          "default_id": null
+        },
+        {
+          "key_field": "education_level",
+          "is_visible": true,
+          "is_required": true,
+          "default_value": null,
+          "id": 16,
+          "default_id": null
+        },
+        {
+          "key_field": "style",
+          "is_visible": false,
+          "is_required": false,
+          "default_value": "Other",
+          "id": 13,
+          "default_id": 5
+        },
+        {
+          "key_field": "sources",
+          "is_visible": false,
+          "is_required": false,
+          "default_value": "Any",
+          "id": 14,
+          "default_id": 0
+        }
+      ],
+      "popular": null
+    },
+    {
+      "value": 47,
+      "title": "Excel",
+      "is_active": true,
+      "type_group_title": "Homework",
+      "type_group_value": 2,
+      "quantity_type_key": "questions",
+      "fields": [
+        {
+          "key_field": "service",
+          "is_visible": true,
+          "is_required": true,
+          "default_value": null,
+          "id": 19,
+          "default_id": null
+        },
+        {
+          "key_field": "education_level",
+          "is_visible": true,
+          "is_required": true,
+          "default_value": null,
+          "id": 20,
+          "default_id": null
+        },
+        {
+          "key_field": "style",
+          "is_visible": false,
+          "is_required": false,
+          "default_value": "Other",
+          "id": 17,
+          "default_id": 5
+        },
+        {
+          "key_field": "sources",
+          "is_visible": false,
+          "is_required": false,
+          "default_value": "Any",
+          "id": 18,
+          "default_id": 0
+        }
+      ],
+      "popular": null
+    },
+    {
+      "value": 48,
+      "title": "Economics",
+      "is_active": true,
+      "type_group_title": "Homework",
+      "type_group_value": 2,
+      "quantity_type_key": "questions",
+      "fields": [
+        {
+          "key_field": "service",
+          "is_visible": true,
+          "is_required": true,
+          "default_value": null,
+          "id": 23,
+          "default_id": null
+        },
+        {
+          "key_field": "education_level",
+          "is_visible": true,
+          "is_required": true,
+          "default_value": null,
+          "id": 24,
+          "default_id": null
+        },
+        {
+          "key_field": "style",
+          "is_visible": false,
+          "is_required": false,
+          "default_value": "Other",
+          "id": 21,
+          "default_id": 5
+        },
+        {
+          "key_field": "sources",
+          "is_visible": false,
+          "is_required": false,
+          "default_value": "Any",
+          "id": 22,
+          "default_id": 0
+        }
+      ],
+      "popular": null
+    },
+    {
+      "value": 49,
+      "title": "Accounting",
+      "is_active": true,
+      "type_group_title": "Homework",
+      "type_group_value": 2,
+      "quantity_type_key": "questions",
+      "fields": [
+        {
+          "key_field": "service",
+          "is_visible": true,
+          "is_required": true,
+          "default_value": null,
+          "id": 27,
+          "default_id": null
+        },
+        {
+          "key_field": "education_level",
+          "is_visible": true,
+          "is_required": true,
+          "default_value": null,
+          "id": 28,
+          "default_id": null
+        },
+        {
+          "key_field": "style",
+          "is_visible": false,
+          "is_required": false,
+          "default_value": "Other",
+          "id": 25,
+          "default_id": 5
+        },
+        {
+          "key_field": "sources",
+          "is_visible": false,
+          "is_required": false,
+          "default_value": "Any",
+          "id": 26,
+          "default_id": 0
+        }
+      ],
+      "popular": null
+    },
+    {
+      "value": 18,
+      "title": "Multiple choice questions",
+      "is_active": true,
+      "type_group_title": "Questions",
+      "type_group_value": 3,
+      "quantity_type_key": "questions",
+      "fields": [],
+      "popular": null
+    },
+    {
+      "value": 31,
+      "title": "Short answer questions",
+      "is_active": true,
+      "type_group_title": "Questions",
+      "type_group_value": 3,
+      "quantity_type_key": "pages",
+      "fields": [],
+      "popular": null
+    },
+    {
+      "value": 30,
+      "title": "Word problems",
+      "is_active": false,
+      "type_group_title": "Questions",
+      "type_group_value": 3,
+      "quantity_type_key": "word_problems",
+      "fields": [],
+      "popular": null
+    }
+  ],
+  "types_group": [
+    {
+      "value": 1,
+      "title": "Assignment",
+      "is_active": true,
+      "is_manual_price": false
+    },
+    {
+      "value": 2,
+      "title": "Homework",
+      "is_active": true,
+      "is_manual_price": true
+    },
+    {
+      "value": 3,
+      "title": "Questions",
+      "is_active": true,
+      "is_manual_price": true
+    }
+  ],
+  "styles": [
+    {
+      "value": 2,
+      "title": "APA 6th edition"
+    },
+    {
+      "value": 7,
+      "title": "APA 7th edition"
+    },
+    {
+      "value": 10,
+      "title": "ASA"
+    },
+    {
+      "value": 9,
+      "title": "Bluebook"
+    },
+    {
+      "value": 3,
+      "title": "Chicago/Turabian"
+    },
+    {
+      "value": 6,
+      "title": "Harvard"
+    },
+    {
+      "value": 8,
+      "title": "IEEE"
+    },
+    {
+      "value": 1,
+      "title": "MLA"
+    },
+    {
+      "value": 5,
+      "title": "Other"
+    },
+    {
+      "value": 4,
+      "title": "Not applicable"
+    }
+  ],
+  "languages": [
+    {
+      "value": 1,
+      "title": "English (US)",
+      "is_active": true,
+      "country": "US"
+    },
+    {
+      "value": 2,
+      "title": "English (UK)",
+      "is_active": true,
+      "country": "GB"
+    },
+    {
+      "value": 3,
+      "title": "Spanish (ES)",
+      "is_active": true,
+      "country": "ES"
+    },
+    {
+      "value": 4,
+      "title": "French (FR)",
+      "is_active": true,
+      "country": "FR"
+    }
+  ],
+  "spaces": [
+    {
+      "value": 1,
+      "title": "Double",
+      "is_active": true,
+      "words_count": 275
+    },
+    {
+      "value": 2,
+      "title": "Single",
+      "is_active": true,
+      "words_count": 550
+    }
+  ],
+  "academic_degree": [
+    {
+      "value": 1,
+      "title": "Associate",
+      "is_active": true
+    },
+    {
+      "value": 2,
+      "title": "Bachelor",
+      "is_active": true
+    },
+    {
+      "value": 3,
+      "title": "Master",
+      "is_active": true
+    },
+    {
+      "value": 4,
+      "title": "Phd",
+      "is_active": true
+    }
+  ],
+  "quantity_types": [
+    {
+      "value": 0,
+      "title": "pages",
+      "is_active": true,
+      "key": "PAGES"
+    },
+    {
+      "value": 1,
+      "title": "slides",
+      "is_active": true,
+      "key": "SLIDES"
+    },
+    {
+      "value": 2,
+      "title": "tasks",
+      "is_active": true,
+      "key": "TASKS"
+    },
+    {
+      "value": 3,
+      "title": "questions",
+      "is_active": true,
+      "key": "QUESTIONS"
+    },
+    {
+      "value": 4,
+      "title": "slides_with_notes",
+      "is_active": true,
+      "key": "SLIDES_WITH_NOTES"
+    },
+    {
+      "value": 5,
+      "title": "problems",
+      "is_active": true,
+      "key": "PROBLEMS"
+    },
+    {
+      "value": 6,
+      "title": "word_problems",
+      "is_active": false,
+      "key": "WORD_PROBLEMS"
+    }
+  ],
+  "file_settings": {
+    "min_size": 1,
+    "max_size": 157286400,
+    "extensions": {
+      "jpg": "image",
+      "jpeg": "image",
+      "tif": "image",
+      "psd": "image",
+      "bmp": "image",
+      "png": "image",
+      "nef": "image",
+      "tiff": "image",
+      "cr2": "image",
+      "dwg": "image",
+      "cdr": "image",
+      "ai": "image",
+      "indd": "image",
+      "pin": "image",
+      "cdp": "image",
+      "skp": "image",
+      "stp": "image",
+      "3dm": "image",
+      "gif": "image",
+      "heic": "image",
+      "vsdx": "image",
+      "e01": "image",
+      "compress": "compress",
+      "rar": "compress",
+      "7z": "compress",
+      "lz": "compress",
+      "z01": "compress",
+      "zip": "compress",
+      "tar": "compress",
+      "accdb": "compress",
+      "pdf": "pdf",
+      "xls": "xls",
+      "xlsx": "xls",
+      "ods": "xls",
+      "xlsm": "xls",
+      "doc": "doc",
+      "docx": "doc",
+      "eps": "doc",
+      "txt": "doc",
+      "odt": "doc",
+      "rtf": "doc",
+      "pub": "doc",
+      "pod": "doc",
+      "spv": "doc",
+      "sql": "doc",
+      "epub": "doc",
+      "ppt": "ppt",
+      "pptm": "ppt",
+      "pptx": "ppt",
+      "pps": "ppt",
+      "ppsx": "ppt",
+      "odp": "ppt",
+      "csv": "csv",
+      "sav": "csv",
+      "pages": "doc",
+      "numbers": "xls",
+      "keynote": "ppt",
+      "avi": "video",
+      "mov": "video",
+      "mp4": "video",
+      "wmv": "video",
+      "m4a": "audio",
+      "mp3": "audio",
+      "wav": "audio",
+      "wma": "audio",
+      "mmp": "audio"
+    }
+  },
+  "billing_fees": {
+    "bank_card": {
+      "min_amount": 10,
+      "max_amount": 2000,
+      "fee": 2.5,
+      "mandatory_fee_amount": 4,
+      "min_fee_amount": null,
+      "max_fee_amount": null
+    },
+    "payoneer": {
+      "min_amount": 20,
+      "max_amount": null,
+      "fee": null,
+      "mandatory_fee_amount": null,
+      "min_fee_amount": null,
+      "max_fee_amount": null
+    },
+    "m_pesa": {
+      "min_amount": 20,
+      "max_amount": 1000,
+      "fee": null,
+      "mandatory_fee_amount": null,
+      "min_fee_amount": null,
+      "max_fee_amount": null
+    },
+    "bank_account": {
+      "min_amount": 250,
+      "max_amount": null,
+      "fee": null,
+      "mandatory_fee_amount": null,
+      "min_fee_amount": null,
+      "max_fee_amount": null
+    }
+  },
+  "levels": [
+    {
+      "value": 1,
+      "title": "High school"
+    },
+    {
+      "value": 4,
+      "title": "College"
+    },
+    {
+      "value": 2,
+      "title": "Bachelor's"
+    },
+    {
+      "value": 5,
+      "title": "Master's"
+    },
+    {
+      "value": 3,
+      "title": "Doctorate"
+    }
+  ],
+  "order_file_types": {
+    "general": {
+      "0": "Revision",
+      "1": "Draft",
+      "2": "Final",
+      "3": "Additional"
+    },
+    "addons": {
+      "4": "AI report",
+      "5": "Plagiarism report",
+      "6": "Grammar check",
+      "7": "1-Page abstract",
+      "8": "Printable sources",
+      "9": "Detailed outline",
+      "10": "Graphics & tables"
+    }
+  }
+}
