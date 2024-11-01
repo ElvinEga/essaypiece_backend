@@ -369,14 +369,6 @@
       "recent": false
     },
     {
-      "value": 29,
-      "title": "Education",
-      "is_active": true,
-      "subject_group_id": 107,
-      "subject_group_title": "Education",
-      "recent": false
-    },
-    {
       "value": 156,
       "title": "Research methods",
       "is_active": true,
@@ -571,14 +563,6 @@
     {
       "value": 60,
       "title": "Medicine and health",
-      "is_active": true,
-      "subject_group_id": 118,
-      "subject_group_title": "Healthcare and life sciences",
-      "recent": false
-    },
-    {
-      "value": 63,
-      "title": "Nursing",
       "is_active": true,
       "subject_group_id": 118,
       "subject_group_title": "Healthcare and life sciences",

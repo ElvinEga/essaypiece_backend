@@ -119,7 +119,7 @@ def list_orders_by_user(user_id: str, db: Session = Depends(get_db), status: Opt
     return query.all()
 
 
-@order_module.get("/order/order_options/")
+@order_module.get("/order_options/")
 async def get_order_options():
     try:
         with open(ORDER_OPTIONS_FILE, "r") as file:
