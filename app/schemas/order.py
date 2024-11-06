@@ -9,6 +9,17 @@ class OrderStatus(str, Enum):
     draft = "draft"
     open = "open"
     closed = "closed"
+    cancelled = "cancelled"
+
+
+class Space(str, Enum):
+    double = "double"
+    single = "single"
+
+
+class SizeType(str, Enum):
+    pages = "pages"
+    words = "words"
 
 
 class Language(int, Enum):
@@ -77,12 +88,12 @@ class OrderCreate(BaseModel):
     level: Academic
     service: Service
     quantity: int
-    space: int
+    space: str
     words_count: int
     size_type: str
     topic: str
     description: str
-    subject: str
+    subject: int
     number_of_sources: int
     style: CitationStyle
     is_private: bool
@@ -101,12 +112,12 @@ class OrderUpdate(BaseModel):
     level: Optional[Academic]
     service: Optional[Service]
     quantity: Optional[int]
-    space: Optional[int]
+    space: Optional[str]
     words_count: Optional[int]
     size_type: Optional[str]
     topic: Optional[str]
     description: Optional[str]
-    subject: Optional[str]
+    subject: Optional[int]
     number_of_sources: Optional[int]
     style: Optional[CitationStyle]
     is_private: Optional[bool]
@@ -126,12 +137,12 @@ class OrderResponse(BaseModel):
     level: int
     service: int
     quantity: int
-    space: int
+    space: str
     words_count: int
     size_type: str
     topic: str
     description: str
-    subject: str
+    subject: int
     number_of_sources: int
     style: int
     is_private: bool

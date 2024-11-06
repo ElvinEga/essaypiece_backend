@@ -1,6 +1,8 @@
+from uuid import UUID
+
 from pydantic import BaseModel
 from datetime import datetime
-from typing import Optional, List
+from typing import Optional, List, Union
 from app.models.user import UserRole
 
 
@@ -12,6 +14,7 @@ class UserCreate(UserBase):
     password: str
     first_name: str | None = None
     last_name: str | None = None
+    role: UserRole = UserRole.client
 
 
 class UserLogin(UserBase):
@@ -23,7 +26,7 @@ class RefreshTokenRequest(BaseModel):
 
 
 class User(UserBase):
-    id: int
+    id: UUID
     first_name: Optional[str]
     last_name: Optional[str]
     phone_number: Optional[str]
@@ -34,6 +37,7 @@ class User(UserBase):
 
     class Config:
         from_attributes = True
+        orm_mode = True
 
 
 class UserUpdate(BaseModel):
@@ -67,3 +71,43 @@ class ClientProfileCreate(BaseModel):
     accepted_orders: Optional[int]
     pay_rate: Optional[float]
     balance: Optional[float]
+
+
+# Client profile response model
+class ClientProfileResponse(BaseModel):
+    id: UUID
+    country: Optional[str]
+    # orders: Optional[int]
+    accepted_orders: Optional[int]
+    pay_rate: Optional[float]
+    balance: Optional[float]
+
+    class Config:
+        from_attributes = True
+        orm_mode = True
+
+
+# Writer profile response model
+class WriterProfileResponse(BaseModel):
+    id: UUID
+    reviews: Optional[str]
+    orders: Optional[int]
+    success_rate: Optional[float]
+    about_me: Optional[str]
+    status: Optional[str]
+    profile_picture: Optional[str]
+    skills: Optional[List[str]]
+    languages: Optional[List[str]]
+
+    class Config:
+        from_attributes = True
+        orm_mode = True
+
+
+# Combined response model for user with optional profile
+class UserWithProfileResponse(BaseModel):
+    user: User
+    profile: Optional[Union[ClientProfileResponse, WriterProfileResponse]] = None
+
+    class Config:
+        orm_mode = True

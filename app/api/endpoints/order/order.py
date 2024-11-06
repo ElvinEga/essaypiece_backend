@@ -15,7 +15,7 @@ order_module = APIRouter()
 ORDER_OPTIONS_FILE = os.path.join(os.path.dirname(__file__), "../../../data/order_options.json")
 
 
-@order_module.post("/orders/", response_model=OrderResponse)
+@order_module.post("/", response_model=OrderResponse)
 def create_order(order: OrderCreate, db: Session = Depends(get_db)):
     new_order = Order(
         product=order.product,
@@ -44,7 +44,7 @@ def create_order(order: OrderCreate, db: Session = Depends(get_db)):
     return new_order
 
 
-@order_module.put("/orders/{order_id}", response_model=OrderResponse)
+@order_module.put("/{order_id}", response_model=OrderResponse)
 def update_order(order_id: int, order_update: OrderUpdate, db: Session = Depends(get_db)):
     order = db.query(Order).filter(Order.id == order_id).first()
 
@@ -60,7 +60,7 @@ def update_order(order_id: int, order_update: OrderUpdate, db: Session = Depends
     return order
 
 
-@order_module.patch("/orders/{order_id}", response_model=OrderResponse)
+@order_module.patch("/{order_id}", response_model=OrderResponse)
 def patch_order(order_id: int, order_update: OrderUpdate, db: Session = Depends(get_db)):
     order = db.query(Order).filter(Order.id == order_id).first()
 
@@ -76,7 +76,7 @@ def patch_order(order_id: int, order_update: OrderUpdate, db: Session = Depends(
     return order
 
 
-@order_module.delete("/orders/{order_id}")
+@order_module.delete("/{order_id}")
 def delete_order(order_id: int, db: Session = Depends(get_db)):
     order = db.query(Order).filter(Order.id == order_id).first()
 
@@ -89,7 +89,7 @@ def delete_order(order_id: int, db: Session = Depends(get_db)):
     return {"message": "Order deleted successfully"}
 
 
-@order_module.get("/orders/{order_id}", response_model=OrderResponse)
+@order_module.get("/{order_id}", response_model=OrderResponse)
 def get_order_by_id(order_id: int, db: Session = Depends(get_db)):
     order = db.query(Order).filter(Order.id == order_id).first()
 
@@ -99,7 +99,7 @@ def get_order_by_id(order_id: int, db: Session = Depends(get_db)):
     return order
 
 
-@order_module.get("/orders/", response_model=List[OrderResponse])
+@order_module.get("/", response_model=List[OrderResponse])
 def list_all_orders(db: Session = Depends(get_db), status: Optional[OrderStatus] = None):
     query = db.query(Order)
 

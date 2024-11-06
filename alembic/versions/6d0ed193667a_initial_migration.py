@@ -1,8 +1,8 @@
 """Initial migration
 
-Revision ID: 85558d5168cb
+Revision ID: 6d0ed193667a
 Revises: 
-Create Date: 2024-10-29 12:20:49.618202
+Create Date: 2024-11-05 12:16:26.496622
 
 """
 from typing import Sequence, Union
@@ -12,7 +12,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision: str = '85558d5168cb'
+revision: str = '6d0ed193667a'
 down_revision: Union[str, None] = None
 branch_labels: Union[str, Sequence[str], None] = None
 depends_on: Union[str, Sequence[str], None] = None
@@ -41,7 +41,7 @@ def upgrade() -> None:
     sa.Column('last_name', sa.String(), nullable=True),
     sa.Column('phone_number', sa.String(), nullable=True),
     sa.Column('role', sa.Enum('client', 'admin', 'writer', name='userrole'), nullable=True),
-    sa.Column('id', sa.Integer(), nullable=False),
+    sa.Column('id', sa.String(), nullable=False),
     sa.Column('is_active', sa.Boolean(), nullable=True),
     sa.Column('created_at', sa.DateTime(timezone=True), server_default=sa.text('(CURRENT_TIMESTAMP)'), nullable=True),
     sa.Column('updated_at', sa.DateTime(timezone=True), server_default=sa.text('(CURRENT_TIMESTAMP)'), nullable=True),
@@ -51,7 +51,7 @@ def upgrade() -> None:
     op.create_index(op.f('ix_users_email'), 'users', ['email'], unique=True)
     op.create_index(op.f('ix_users_id'), 'users', ['id'], unique=False)
     op.create_table('clients',
-    sa.Column('id', sa.Integer(), nullable=False),
+    sa.Column('id', sa.String(), nullable=False),
     sa.Column('country', sa.String(), nullable=True),
     sa.Column('accepted_orders', sa.Integer(), nullable=True),
     sa.Column('pay_rate', sa.Float(), nullable=True),
@@ -59,8 +59,25 @@ def upgrade() -> None:
     sa.ForeignKeyConstraint(['id'], ['users.id'], ),
     sa.PrimaryKeyConstraint('id')
     )
-    op.create_table('writers',
+    op.create_table('transactions',
     sa.Column('id', sa.Integer(), nullable=False),
+    sa.Column('user_id', sa.Integer(), nullable=False),
+    sa.Column('sign', sa.Enum('positive', 'negative', name='sign'), nullable=False),
+    sa.Column('amount', sa.Float(), nullable=False),
+    sa.Column('transaction_number', sa.String(), nullable=True),
+    sa.Column('transaction_type', sa.Enum('deposit', 'withdrawal', name='transactiontype'), nullable=False),
+    sa.Column('status', sa.Enum('pending', 'completed', 'failed', name='transactionstatus'), nullable=False),
+    sa.Column('description', sa.String(), nullable=True),
+    sa.Column('date', sa.DateTime(), nullable=True),
+    sa.Column('created_at', sa.DateTime(), nullable=True),
+    sa.Column('updated_at', sa.DateTime(), nullable=True),
+    sa.ForeignKeyConstraint(['user_id'], ['users.id'], ),
+    sa.PrimaryKeyConstraint('id'),
+    sa.UniqueConstraint('transaction_number')
+    )
+    op.create_index(op.f('ix_transactions_id'), 'transactions', ['id'], unique=False)
+    op.create_table('writers',
+    sa.Column('id', sa.String(), nullable=False),
     sa.Column('reviews', sa.String(), nullable=True),
     sa.Column('orders', sa.Integer(), nullable=True),
     sa.Column('success_rate', sa.Float(), nullable=True),
@@ -70,6 +87,33 @@ def upgrade() -> None:
     sa.ForeignKeyConstraint(['id'], ['users.id'], ),
     sa.PrimaryKeyConstraint('id')
     )
+    op.create_table('orders',
+    sa.Column('id', sa.Integer(), nullable=False),
+    sa.Column('product', sa.Integer(), nullable=False),
+    sa.Column('deadline', sa.DateTime(), nullable=False),
+    sa.Column('for_final_date', sa.DateTime(), nullable=True),
+    sa.Column('language', sa.Enum('english_us', 'english_uk', 'spanish_es', 'french_fr', name='language'), nullable=True),
+    sa.Column('level', sa.Enum('high_school', 'college', 'bachelors', 'masters', 'doctorate', name='academic'), nullable=False),
+    sa.Column('service', sa.Enum('writing', 'rewriting', 'editing', 'proofreading', 'problem_solving', 'calculations', name='service'), nullable=True),
+    sa.Column('quantity', sa.Integer(), nullable=True),
+    sa.Column('space', sa.Enum('double', 'single', name='space'), nullable=False),
+    sa.Column('words_count', sa.Integer(), nullable=False),
+    sa.Column('size_type', sa.Enum('pages', 'words', name='sizetype'), nullable=False),
+    sa.Column('topic', sa.String(), nullable=False),
+    sa.Column('description', sa.String(), nullable=False),
+    sa.Column('price', sa.Float(), nullable=True),
+    sa.Column('subject', sa.Integer(), nullable=False),
+    sa.Column('number_of_sources', sa.Integer(), nullable=False),
+    sa.Column('style', sa.Enum('APA_6th', 'APA_7th', 'ASA', 'Bluebook', 'Chicago_Turabian', 'Harvard', 'IEEE', 'MLA', 'Other', 'Not_applicable', name='citationstyle'), nullable=False),
+    sa.Column('is_private', sa.Boolean(), nullable=True),
+    sa.Column('promocode', sa.String(), nullable=True),
+    sa.Column('client_id', sa.String(), nullable=False),
+    sa.Column('status', sa.Enum('draft', 'open', 'closed', name='orderstatus'), nullable=False),
+    sa.Column('created_at', sa.DateTime(), nullable=True),
+    sa.ForeignKeyConstraint(['client_id'], ['clients.id'], ),
+    sa.PrimaryKeyConstraint('id')
+    )
+    op.create_index(op.f('ix_orders_id'), 'orders', ['id'], unique=False)
     op.create_table('writer_languages',
     sa.Column('writer_id', sa.Integer(), nullable=True),
     sa.Column('language_id', sa.Integer(), nullable=True),
@@ -89,7 +133,11 @@ def downgrade() -> None:
     # ### commands auto generated by Alembic - please adjust! ###
     op.drop_table('writer_skills')
     op.drop_table('writer_languages')
+    op.drop_index(op.f('ix_orders_id'), table_name='orders')
+    op.drop_table('orders')
     op.drop_table('writers')
+    op.drop_index(op.f('ix_transactions_id'), table_name='transactions')
+    op.drop_table('transactions')
     op.drop_table('clients')
     op.drop_index(op.f('ix_users_id'), table_name='users')
     op.drop_index(op.f('ix_users_email'), table_name='users')

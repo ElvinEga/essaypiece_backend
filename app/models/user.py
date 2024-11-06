@@ -55,7 +55,7 @@ class User(CommonModel):
 
 class Writer(Base):
     __tablename__ = 'writers'
-    id = Column(Integer, ForeignKey('users.id'), primary_key=True)
+    id = Column(String, ForeignKey('users.id'), primary_key=True)
     user = relationship("User")
     reviews = Column(String)
     orders = Column(Integer)
@@ -69,7 +69,7 @@ class Writer(Base):
 
 class Client(Base):
     __tablename__ = 'clients'
-    id = Column(Integer, ForeignKey('users.id'), primary_key=True)
+    id = Column(String, ForeignKey('users.id'), primary_key=True)
     user = relationship("User")
     country = Column(String)
     orders = relationship("Order", back_populates="client")

@@ -1,5 +1,5 @@
 from fastapi import HTTPException, status, Depends
-from typing import Annotated
+from typing import Annotated, Union
 from datetime import datetime, timedelta, timezone
 
 from sqlalchemy.orm import Session
@@ -10,12 +10,13 @@ from jose import JWTError, jwt
 
 # import 
 from app.models import user as UserModel
-from app.schemas.user import UserCreate, UserUpdate, Token
+from app.schemas.user import UserCreate, UserUpdate, Token, ClientProfileResponse, WriterProfileResponse, \
+    UserWithProfileResponse
 from app.core.settings import SECRET_KEY, REFRESH_SECRET_KEY, ALGORITHM
 from app.core.settings import ACCESS_TOKEN_EXPIRE_MINUTES
 from app.core.dependencies import get_db, oauth2_scheme
-from app.schemas.user import WriterProfileCreate, ClientProfileCreate
-from app.models.user import Writer, Client
+from app.schemas.user import WriterProfileCreate, ClientProfileCreate, User as UserSchema
+from app.models.user import Writer, Client, User, UserRole
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
@@ -37,10 +38,24 @@ def get_user_by_id(db: Session, user_id: int):
 def create_new_user(db: Session, user: UserCreate):
     hashed_password = pwd_context.hash(user.password)
     new_user = UserModel.User(email=user.email, password=hashed_password, first_name=user.first_name,
-                              last_name=user.last_name)
+                              last_name=user.last_name, role=user.role)
     db.add(new_user)
     db.commit()
     db.refresh(new_user)
+
+    if new_user.role == UserRole.client:
+        client_profile = Client(
+            id=new_user.id,  # Use the same UUID as the user ID
+            user=new_user,
+            country=None,  # Set default values or modify based on user input
+            accepted_orders=0,
+            pay_rate=0.0,
+            balance=0.0
+        )
+        db.add(client_profile)
+        db.commit()
+        db.refresh(client_profile)
+
     return new_user
 
 
@@ -127,22 +142,48 @@ async def refresh_access_token(db: Session, refresh_token: str):
 
 
 # get current users info 
-def get_current_user(token: Annotated[str, Depends(oauth2_scheme)], db: Annotated[Session, Depends(get_db)]):
+
+def get_current_user(
+        token: Annotated[str, Depends(oauth2_scheme)],
+        db: Annotated[Session, Depends(get_db)]
+) -> UserWithProfileResponse:
     credentials_exception = HTTPException(
         status_code=status.HTTP_401_UNAUTHORIZED,
         detail="Invalid authentication credentials",
         headers={"WWW-Authenticate": "Bearer"},
     )
     try:
+        # Decode the JWT token
         payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
-        # print(f"Payload =====> {payload}")
         current_email: str = payload.get("email")
+
         if current_email is None:
             raise credentials_exception
+
+        # Retrieve user by email
         user = get_user_by_email(db, current_email)
         if user is None:
             raise credentials_exception
-        return user
+
+        # Convert User SQLAlchemy model to Pydantic model
+        user_data = UserSchema.from_orm(user)
+
+        # Check and include profile based on user role
+        if user.role == UserRole.client:
+            client_profile = db.query(Client).filter(Client.id == user.id).first()
+            if client_profile:
+                profile_data = ClientProfileResponse.from_orm(client_profile)
+                return UserWithProfileResponse(user=user_data, profile=profile_data)
+
+        elif user.role == UserRole.writer:
+            writer_profile = db.query(Writer).filter(Writer.id == user.id).first()
+            if writer_profile:
+                profile_data = WriterProfileResponse.from_orm(writer_profile)
+                return UserWithProfileResponse(user=user_data, profile=profile_data)
+
+        # For admin or users with no profile, just return the user without profile
+        return UserWithProfileResponse(user=user_data, profile=None)
+
     except JWTError:
         raise credentials_exception
 

@@ -12,7 +12,7 @@ import os
 from sqlalchemy.orm import Session
 
 # import
-from app.schemas.user import User, UserLogin, Token, RefreshTokenRequest
+from app.schemas.user import User, UserLogin, Token, RefreshTokenRequest, UserWithProfileResponse
 from app.core.dependencies import get_db
 from app.core.settings import ACCESS_TOKEN_EXPIRE_MINUTES, REFRESH_TOKEN_EXPIRE_DAYS
 from app.api.endpoints.user import functions as user_functions
@@ -71,7 +71,7 @@ async def refresh_access_token(
 
 
 # get curren user
-@auth_module.get('/users/me/', response_model=User)
+@auth_module.get('/users/me/', response_model=UserWithProfileResponse)
 async def read_current_user(current_user: Annotated[User, Depends(user_functions.get_current_user)]):
     return current_user
 
